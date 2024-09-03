@@ -2,7 +2,7 @@
 import { useParams } from 'next/navigation'
 import { useEffect, useState } from 'react'
 import StudentForm from '../../../components/Forms/StudentForm'
-import StaffForm from '../../../components/Forms/StudentForm'
+import StaffForm from '../../../components/Forms/StaffForm'
 import DefaultLayout from '../../../components/Layouts/DefaultLayout'
 
 const SchoolDetails = () => {
