@@ -102,7 +102,7 @@ const Dashboard: React.FC = () => {
         )
       case 'schoolGallery':
         return (
-          <div className="p-4 border-2 border-slate-300 rounded-lg dark:border-gray-600 bg-white shadow-lg">
+          <div className="p-4   rounded-lg dark:border-gray-600 bg-white shadow-lg">
             <h3 className="text-xl font-semibold text-gray-800 mb-4">
               School Gallery
             </h3>
@@ -209,10 +209,10 @@ const Dashboard: React.FC = () => {
   }
 
   return (
-    <main className="p-4  h-auto   font-sans">
+    <main className="  h-auto   font-sans">
       {/* First Row: Attendance and Fees Due (50% each) */}
       <div className="flex mb-4 space-x-4">
-        <div className="w-1/2 p-6 border-2 border-slate-300 rounded-lg dark:border-gray-600 bg-white shadow-md hover:shadow-lg transition duration-200">
+        <div className="w-1/2 p-6  rounded-lg dark:border-gray-600 bg-white shadow-md hover:shadow-lg transition duration-200">
           <h3 className="text-xl font-semibold text-gray-800 mb-4">
             Attendance
           </h3>
@@ -221,7 +221,7 @@ const Dashboard: React.FC = () => {
           </div>
         </div>
 
-        <div className="w-1/2 p-6 border-2 border-slate-300 rounded-lg dark:border-gray-600 bg-white text-center shadow-md hover:shadow-lg transition duration-200">
+        <div className="w-1/2 p-6   rounded-lg dark:border-gray-600 bg-white text-center shadow-md hover:shadow-lg transition duration-200">
           <Image
             src="/icons/wallet.png"
             alt="img not found"
@@ -249,7 +249,7 @@ const Dashboard: React.FC = () => {
       {/* Second Row: Expandable Cards */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-4">
         <div
-          className="p-2 border-2 border-slate-300 rounded-lg dark:border-gray-600 bg-slate-800 text-white shadow-md hover:shadow-lg cursor-pointer transition duration-200"
+          className="p-2   rounded-lg dark:border-gray-600 bg-slate-800 text-white shadow-md hover:shadow-lg cursor-pointer transition duration-200"
           onClick={() => setActiveComponent('leaveApplication')}
         >
           <div className="flex gap-6 ">
@@ -272,7 +272,7 @@ const Dashboard: React.FC = () => {
         </div>
 
         <div
-          className="p-2 border-2 border-slate-300 rounded-lg dark:border-gray-600 bg-slate-800 text-white shadow-md hover:shadow-lg cursor-pointer transition duration-200"
+          className="p-2   rounded-lg dark:border-gray-600 bg-slate-800 text-white shadow-md hover:shadow-lg cursor-pointer transition duration-200"
           onClick={() => setActiveComponent('event')}
         >
           <div className="flex gap-6 ">
@@ -295,7 +295,7 @@ const Dashboard: React.FC = () => {
         </div>
 
         <div
-          className="p-2 border-2 border-slate-300 rounded-lg dark:border-gray-600 bg-slate-800 text-white shadow-md hover:shadow-lg cursor-pointer transition duration-200"
+          className="p-2   rounded-lg dark:border-gray-600 bg-slate-800 text-white shadow-md hover:shadow-lg cursor-pointer transition duration-200"
           onClick={() => setActiveComponent('askDoubts')}
         >
           <div className="flex gap-6 ">
@@ -318,7 +318,7 @@ const Dashboard: React.FC = () => {
         </div>
 
         <div
-          className="p-2 border-2 border-slate-300 rounded-lg dark:border-gray-600 bg-slate-800 text-white shadow-md hover:shadow-lg cursor-pointer transition duration-200"
+          className="p-2   rounded-lg dark:border-gray-600 bg-slate-800 text-white shadow-md hover:shadow-lg cursor-pointer transition duration-200"
           onClick={() => setActiveComponent('schoolGallery')}
         >
           <div className="flex gap-6 ">
@@ -342,7 +342,7 @@ const Dashboard: React.FC = () => {
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-4">
         <div
-          className="p-2 border-2 border-slate-300 rounded-lg dark:border-gray-600 bg-slate-800 text-white shadow-md hover:shadow-lg cursor-pointer transition duration-200"
+          className="p-2   rounded-lg dark:border-gray-600 bg-slate-800 text-white shadow-md hover:shadow-lg cursor-pointer transition duration-200"
           onClick={() => setActiveComponent('assignment')}
         >
           <div className="flex gap-6 ">
@@ -365,7 +365,7 @@ const Dashboard: React.FC = () => {
         </div>
 
         <div
-          className="p-2 border-2 border-slate-300 rounded-lg dark:border-gray-600 bg-slate-800 text-white shadow-md hover:shadow-lg cursor-pointer transition duration-200"
+          className="p-2   rounded-lg dark:border-gray-600 bg-slate-800 text-white shadow-md hover:shadow-lg cursor-pointer transition duration-200"
           onClick={() => setActiveComponent('schoolHoliday')}
         >
           <div className="flex gap-6 ">
@@ -388,7 +388,7 @@ const Dashboard: React.FC = () => {
         </div>
 
         <div
-          className="p-2 border-2 border-slate-300 rounded-lg dark:border-gray-600 bg-slate-800 text-white shadow-md hover:shadow-lg cursor-pointer transition duration-200"
+          className="p-2   rounded-lg dark:border-gray-600 bg-slate-800 text-white shadow-md hover:shadow-lg cursor-pointer transition duration-200"
           onClick={() => setActiveComponent('examResult')}
         >
           <div className="flex gap-6 ">
@@ -411,7 +411,7 @@ const Dashboard: React.FC = () => {
         </div>
 
         <div
-          className="p-2 border-2 border-slate-300 rounded-lg dark:border-gray-600 bg-slate-800 text-white shadow-md hover:shadow-lg cursor-pointer transition duration-200"
+          className="p-2   rounded-lg dark:border-gray-600 bg-slate-800 text-white shadow-md hover:shadow-lg cursor-pointer transition duration-200"
           onClick={() => setActiveComponent('changePassword')}
         >
           <div className="flex gap-6 ">
@@ -452,7 +452,11 @@ const Dashboard: React.FC = () => {
 
       {/* Render Active Component */}
       <div className="mt-6">{renderComponent()}</div>
+      <div>
+        
+      </div>
     </main>
+    
   )
 }
 

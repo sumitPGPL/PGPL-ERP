@@ -26,7 +26,6 @@ const SignIn: React.FC = () => {
                   alt="Logo"
                   width={50}
                   height={50}
-                  
                 />
                 <Image
                   className="dark:hidden "
