@@ -67,7 +67,7 @@ const SchoolDetails = () => {
   }
 
   return (
-    <DefaultLayout>
+    <DefaultLayout  >
     <div className="flex w-full">
       {/* Sidebar */}
       <aside className="bg-gray-800 text-white  w-[18%] min-h-screen p-4">
