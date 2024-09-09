@@ -1,10 +1,10 @@
 import React from 'react'
-import StaffPage from '@/components/StaffPage/StaffPage'
+import {StaffDetails} from '../../StaffPage/StaffPage.tsx'
 
 export default function page({params}) {
   return (
     <div>
-      <StaffPage id={params.id}  />
+      <StaffDetails id={params.id}  />
     </div>
   )
 }

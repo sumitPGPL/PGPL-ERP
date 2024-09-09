@@ -77,7 +77,7 @@ function ERPForm() {
     <div className="p-6 bg-gray-100 ">
       <h1 className="text-3xl font-bold mb-6">Educational ERP System</h1>
 
-      {!mode && (
+
         <div className="mb-6">
           <button
             onClick={() => handleModeChange('single')}
@@ -92,7 +92,7 @@ function ERPForm() {
             Create Group of Schools
           </button>
         </div>
-      )}
+
 
       {mode === 'group' && (
         <div className="mb-6">

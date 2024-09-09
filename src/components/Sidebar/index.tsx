@@ -337,15 +337,16 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
       >
         {/* <!-- SIDEBAR HEADER --> */}
         <div className="flex items-center justify-between gap-2 px-6 py-5.5 lg:py-6.5">
-          <Link href="/" className=" w-full flex items-center justify-center">
+          <Link href="/" className=" w-full flex items-center  gap-4">
             <Image
               width={200}
               height={200}
               src={"/images/logo/logo.svg"}
               alt="Logo"
-              className=" w-20 h-20 "
+              className=" w-10 h-10 "
               priority
-            />
+            />{"  "}
+          <h2  className=" font-bold">PGPL ERP</h2>
           </Link>
 
           <button
