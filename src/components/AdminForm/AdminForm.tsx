@@ -36,7 +36,9 @@ const AdminForm = () => {
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log(formData);
+    // Save formData to localStorage
+    localStorage.setItem('adminFormData', JSON.stringify(formData));
+    console.log('Form data saved to localStorage:', formData);
   };
 
   return (
@@ -199,7 +201,6 @@ const AdminForm = () => {
           Submit
         </button>
       </div>
-      
     </form>
   );
 };
