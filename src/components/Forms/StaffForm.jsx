@@ -67,8 +67,10 @@ const StaffForm = ({ onAddStaff }) => {
     });
     localStorage.setItem("singleSchoolData", JSON.stringify(updatedSchools));
   };
-
+ 
   return (
+    <>
+   <div className='w-[1000px] mx-auto'>
     <div className="rounded-lg bg-white p-4 shadow-md max-w-7xl mx-auto">
       <h2 className="mb-4 text-xl font-semibold">Add Staff</h2>
       <form onSubmit={handleSubmit} className="grid grid-cols-1 gap-6 md:grid-cols-2">
@@ -153,6 +155,8 @@ const StaffForm = ({ onAddStaff }) => {
         </table>
       </div>
     </div>
+    </div>
+    </>
   );
 };
 

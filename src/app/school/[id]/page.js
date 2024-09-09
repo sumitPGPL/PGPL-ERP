@@ -75,10 +75,10 @@ const SchoolDetails = () => {
 
   return (
     <DefaultLayout>
-      <div className="flex w-full">
+      <div className="flex flex-col lg:flex-row w-full">
         {/* Sidebar */}
         {!isDetailsVisible && (
-          <aside className="bg-gray-800 text-white w-[18%] min-h-screen p-4">
+          <aside className="bg-gray-800 text-white w-full lg:w-[18%] min-h-screen p-4">
             <nav>
               <ul className="space-y-2">
                 <li>
@@ -123,15 +123,17 @@ const SchoolDetails = () => {
         )}
 
         {/* Main Content */}
-        <main className={`flex-1 p-6 bg-gray-100 min-h-screen ${isDetailsVisible ? 'w-full' : 'w-[82%]'}`}>
+        <main
+          className={`flex-1 p-6 bg-gray-100 min-h-screen transition-all duration-300 ${
+            isDetailsVisible ? 'w-full' : 'w-full lg:w-[82%]'
+          }`}
+        >
           {isDetailsVisible && (
             <img
-            src='/back-arrow.svg'
+              src="/back-arrow.svg"
               onClick={goBack}
-              className="mb-4 p-2 bg-gray-500 text-white rounded hover:bg-gray-600 w-20"
-            >
-              
-            </img>
+              className="mb-4 p-2 bg-gray-500 text-white rounded hover:bg-gray-600 w-20 cursor-pointer"
+            />
           )}
 
           <h1 className="text-3xl font-bold mb-6">{school.name}</h1>
