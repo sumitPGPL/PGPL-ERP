@@ -6,7 +6,6 @@ const SchoolForm = ({ onAddSchool }) => {
     name: '',
     address: '',
     phoneNumber: '',
-   
     email: '',
     headOfInstitution: {
       name: '',

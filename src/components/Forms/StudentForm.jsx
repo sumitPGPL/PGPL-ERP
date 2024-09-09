@@ -21,7 +21,6 @@ const StudentForm = ({ onAddStudent, schoolUpto }) => {
     pickupLocation: '',
   })
   const [students, setStudents] = useState([])
-
   const [gradeOptions, setGradeOptions] = useState([])
 
   useEffect(() => {
@@ -44,6 +43,7 @@ const StudentForm = ({ onAddStudent, schoolUpto }) => {
     setStudent((prevStudent) => ({ ...prevStudent, [name]: value }))
   }
 
+  console.log(students,'names are avialable')
   const handleSubmit = (e) => {
     e.preventDefault()
     const newStudent = { ...student }
@@ -158,7 +158,9 @@ const StudentForm = ({ onAddStudent, schoolUpto }) => {
         >
           Add Student
         </button>
+
       </form>
+      {/* <p>That can be available</p> */}
 
       <h3 className='text-lg font-semibold mb-2'>Student List</h3>
       <div className='p-6 bg-gray-100 min-h-screen w-full'>
