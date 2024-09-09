@@ -107,7 +107,7 @@ const students: Student[] = [
     contactNumber: '123-456-7890',
   },
   {
-    rollNumber: 1,
+    rollNumber:1001,
     studentName: 'John Doe',
     fatherName: 'Mark Doe',
     studentClass: '10th Grade',

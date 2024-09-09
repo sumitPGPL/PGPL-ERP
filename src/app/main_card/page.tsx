@@ -9,7 +9,7 @@ export default function page() {
         <div className=' grid grid-cols-4 gap-4'>
 <div className=' grid gap-4'>
   <h3 className=' text-xl ' >Imortant Form</h3>
-    <MainCard img='/icons/reset-password.png' heading='Add Student' counter={12} link=''/>
+    <MainCard img='/icons/reset-password.png' heading='Add Student' counter={12} link='/student_admissionsla'/>
     <MainCard img='/icons/reset-password.png' heading='Student list' counter={12} link='/studenttable'/>
     <MainCard img='/icons/reset-password.png' heading='hello' counter={12} link='https://www.google.com'/>
     <MainCard img='/icons/reset-password.png' heading='hello' counter={12} link='https://www.google.com'/>
