@@ -38,7 +38,7 @@ const StudentCard: React.FC = () => {
       {students.map((student) => (
         <div
           key={student.rollNumber}
-          className="bg-white shadow-md rounded-lg p-4 border border-gray-200"
+          className="bg-black shadow-md  p-4 "
         >
           <img
             src={student.imageUrl}
@@ -46,7 +46,7 @@ const StudentCard: React.FC = () => {
             className="w-32 h-32 rounded-full mx-auto mb-4"
           />
           <h2 className="text-xl font-bold mb-2 text-center">{student.studentName}</h2>
-          <p className="text-gray-600 mb-1">
+          <p className=" mb-1">
             <strong>Roll Number:</strong> {student.rollNumber}
           </p>
           <p className="text-gray-600 mb-1">
