@@ -5,6 +5,7 @@ import { useEffect, useState } from 'react';
 import StudentForm from '../../../components/Forms/StudentForm';
 import StaffForm from '../../../components/Forms/StaffForm';
 import DefaultLayout from '../../../components/Layouts/DefaultLayout';
+import ClassForm from '../../../components/Forms/ClassForm'
 
 const SchoolDetails = () => {
   const { id } = useParams();
@@ -117,6 +118,18 @@ const SchoolDetails = () => {
                     Staff Form
                   </button>
                 </li>
+                <li>
+                  <button
+                    onClick={() => showDetails('classes')}
+                    className={`w-full p-2 rounded ${
+                      activeTab === 'staffForm'
+                        ? 'bg-blue-700'
+                        : 'bg-blue-600 hover:bg-blue-700'
+                    } text-white`}
+                  >
+                    Classes
+                  </button>
+                </li>
               </ul>
             </nav>
           </aside>
@@ -194,6 +207,12 @@ const SchoolDetails = () => {
             <div className="bg-white p-4 mb-4 rounded-lg shadow-md">
               <h2 className="text-xl font-semibold mb-2">Add Staff</h2>
               <StaffForm onAddStaff={handleAddStaff} />
+            </div>
+          )}
+             {activeTab === 'classes' && (
+            <div className="bg-white p-4 mb-4 rounded-lg shadow-md">
+              <h2 className="text-xl font-semibold mb-2">Add Staff</h2>
+              <ClassForm onAddStaff={handleAddStaff} />
             </div>
           )}
         </main>
