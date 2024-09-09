@@ -89,7 +89,9 @@ const StudentForm = ({ onAddStudent, schoolUpto }) => {
   ]
 
   return (
-    <div className='bg-white p-4 rounded-lg shadow-md w-full'>
+   <>
+   <div className='w-[1000px] mx-auto'>
+    <div className='bg-white p-4  rounded-lg shadow-md '>
       <form className='w-full mb-6' onSubmit={handleSubmit}>
         <div className='grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3'>
           {formFields.map((field, index) => (
@@ -183,6 +185,8 @@ const StudentForm = ({ onAddStudent, schoolUpto }) => {
         </div>
       </div>
     </div>
+    </div>
+    </>
   )
 }
 
