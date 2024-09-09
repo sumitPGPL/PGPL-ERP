@@ -19,7 +19,7 @@ const FormElements = () => {
     <>
       <Breadcrumb pageName="FormElements" />
 
-      <div className="grid grid-cols-1 gap-9 sm:grid-cols-2">
+      <div className="grid grid-cols-2 gap-4 sm:grid-cols-2">
         <div className="flex flex-col gap-9">
           {/* <!-- Input Fields --> */}
           <div className="rounded-sm border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark">
@@ -199,6 +199,7 @@ const FormElements = () => {
           </div>
         </div>
       </div>
+     
     </>
   );
 };

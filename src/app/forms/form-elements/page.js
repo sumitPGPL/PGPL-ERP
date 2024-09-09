@@ -4,6 +4,7 @@ import { useRouter } from 'next/navigation'
 import SchoolForm from '../../../components/Forms/SchoolForm'
 import 'tailwindcss/tailwind.css'
 import DefaultLayout from '@/components/Layouts/DefaultLayout'
+import AdminForm from '@/components/AdminForm/AdminForm'
 
 function ERPForm() {
   const router = useRouter()
@@ -73,7 +74,7 @@ function ERPForm() {
 
   return (
     <DefaultLayout>
-    <div className="p-6 bg-gray-100 min-h-screen">
+    <div className="p-6 bg-gray-100 ">
       <h1 className="text-3xl font-bold mb-6">Educational ERP System</h1>
 
       {!mode && (
@@ -177,6 +178,7 @@ function ERPForm() {
         </>
       )}
     </div>
+    <AdminForm/>
     </DefaultLayout>
   )
 }
