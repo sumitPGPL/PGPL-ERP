@@ -26,10 +26,11 @@ interface StudentDetailsProps {
 const StudentDetails: React.FC<StudentDetailsProps> = ({ id }) => {
   const [student, setStudent] = useState<Student | null>(null)
 
+
   useEffect(() => {
     if (id !== undefined) {
       const storedStudents: Student[] = JSON.parse(localStorage.getItem('students') || '[]')
-      const studentData = storedStudents.find((_, index) => index === id)
+      const studentData = storedStudents.find((_, index) => index == id)
       setStudent(studentData || null)
     }
   }, [id])

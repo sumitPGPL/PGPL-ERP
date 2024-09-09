@@ -17,13 +17,15 @@ interface StudentDetailsProps {
   id: number;
 }
 
-const StudentDetails: React.FC<StudentDetailsProps> = ({ id }) => {
-  const [student, setStudent] = useState<Student | null>(null)
 
+const StaffDetails: React.FC<StudentDetailsProps> = ({ id }) => {
+  const [student, setStudent] = useState<Student | null>(null)
+  console.log('scdssddsfsd');
   useEffect(() => {
-    if (id !== undefined) {
+    if (id) {
       const storedStudents: Student[] = JSON.parse(localStorage.getItem('staff') || '[]')
-      const studentData = storedStudents.find((_, index) => index === id)
+      const studentData = storedStudents.find((_, index) => index == id)
+      console.log(studentData)
       setStudent(studentData || null)
     }
   }, [id])
@@ -87,4 +89,4 @@ const StudentDetails: React.FC<StudentDetailsProps> = ({ id }) => {
   )
 }
 
-export default StudentDetails
+export default StaffDetails
