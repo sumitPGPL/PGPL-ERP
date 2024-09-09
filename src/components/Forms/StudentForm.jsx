@@ -1,5 +1,7 @@
 'use client'
+import Link from 'next/link'
 import { useState,useEffect } from 'react'
+
 
 const StudentForm = ({ onAddStudent, schoolUpto }) => {
   const [student, setStudent] = useState({
